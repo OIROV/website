@@ -1,0 +1,176 @@
+
+/* start all */
+.ALL {
+    margin-top: var(--margin-top-large);
+}
+
+.allGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.allGrid .sections h2 {
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+.allGrid .sections p {
+    color: var(--text-secondary-color) !important;
+}
+
+
+.allGrid .sectionsR img {
+    width: 500px;
+    border-radius: var(--border-radius);
+}
+
+.allGrid .sectionsR img:hover {
+    transform: scale(1.04);
+
+}
+
+/* end all */
+/* start hardware */
+.hardware{
+    margin-top: var(--margin-top-large);
+    background-color: var(--cards-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* end hardware */
+
+
+/* extra small screens */
+@media only screen and (max-width: 600px) {
+
+    /* start all */
+    .hardware{
+        margin-top:16px;
+    }
+    .ALL {
+        margin-top: 16px;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .allGrid .sectionsR {
+        text-align: center;
+    }
+
+    .allGrid .sectionsR img {
+        width: 300px;
+    }
+
+    /* end all */
+}
+
+/* small screen */
+@media (min-width:601px) and (max-width:767px) {
+    .hardware{
+        margin-top:16px;
+    }
+    .ALL {
+        margin-top: 16px;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .allGrid .sectionsR {
+        text-align: center;
+    }
+
+    .allGrid .sectionsR img {
+        width: 300px;
+    }
+}
+
+/* medium screens */
+@media (min-width:768px) and (max-width:791px) {
+
+    /* start all */
+    .hardware{
+        margin-top:16px;
+    }
+    .ALL {
+        margin-top: 16px;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .allGrid .sectionsR {
+        text-align: center;
+    }
+
+    .allGrid .sectionsR img {
+        width: 486px;
+    }
+
+    /* end all */
+}
+
+/*  large screens */
+@media (min-width:792px) and (max-width:940px) {
+
+    /* start all */
+    .hardware{
+        margin-top:16px;
+    }
+    .ALL {
+        margin-top: 16px;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .allGrid .sectionsR {
+        text-align: center;
+    }
+
+    .allGrid .sectionsR img {
+        width: 486px;
+    }
+
+    /* end all */
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    
+    /* start all */
+    .hardware{
+        margin-top:16px;
+    }
+    .ALL {
+        margin-top: 16px;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .allGrid .sectionsR {
+        text-align: center;
+    }
+
+    .allGrid .sectionsR img {
+        width: 486px;
+    }
+
+    /* end all */
+}
+
+/* extra large screens */
+@media (min-width:1400px) and (max-width:3700px) {}

@@ -1,0 +1,104 @@
+:root {
+    --text-main-color: #ffff;
+    --text-secondary-color: #0e0e0e;
+    --background-main-color: rgb(255, 255, 255);
+    --background-secondary-color: #343434;
+    --cards-color: #ededed;
+    --main-color: #f6b921;
+    --shadow-first-background-color: #000000c8;
+    --shadow-second-background-color: #000000a8;
+    --transation: 0.3s;
+    --margin-top-large: 70px;
+    --margin-top-small: 75px;
+    --border-radius: 8px;
+}
+.sponsers {
+    background-color: var(--background-main-color) !important;
+    margin-top: var(--margin-top-large);
+}
+
+.aw h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--main-color);
+    font-weight: 900;
+
+}
+
+.spons .sponsersGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 20px;
+}
+
+.sponsers .sectionOne {
+    background-color: var(--cards-color) !important;
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+.sponsers .sectionOne:hover{
+    transform: scale(1.06);
+}
+.sponsers .sectionOne img {
+    width: 60%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .spons .sponsersGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+}
+
+@media (min-width:601px) and (max-width:767px) {
+    .on {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:791px) {
+    .on {
+        margin-left: 250px;
+        margin-right: -300px;
+    }
+}
+
+
+@media (min-width:792px) and (max-width:940px) {
+    .on {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media (min-width:941px) and (max-width:1023px) {
+    .on {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .on {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media (min-width:1400px) and (max-width:3700px) {
+
+    .on {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/**/

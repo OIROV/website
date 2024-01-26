@@ -1,0 +1,452 @@
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 100;
+
+    
+  }
+
+  .up .fa-arrow-up{
+    color: var(--main-color) !important;
+    font-size: 45px !important;
+ 
+
+  }
+  .up.show {
+    right: 10px;
+  }
+
+.bref .GridBref {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+    align-items: center;
+}
+
+.bref .GridBref .sectionOne h2 {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.bref .GridBref .sectionOne p {
+    font-size: 16px;
+    line-height: 1.8rem;
+}
+
+.bref .GridBref .sectionOne .button {
+    background-color: var(--shadow-first-background-color);
+    border-radius: var(--border-radius);
+    padding: 8px;
+    color: var(--text-main-color) !important;
+    outline: none;
+    transition: var(--transation);
+}
+
+.bref .GridBref .sectionOne img {
+    width: 100% !important;
+    border-radius: var(--border-radius);
+}
+
+/* end bref */
+/* start about */
+.about {
+    margin-top: var(--margin-top-large);
+    background-color: var(--cards-color);
+    padding: 50px;
+}
+
+.about .aboutGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+    align-items: center;
+
+}
+
+.about .aboutGrid .sectionOne h2 {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.about .aboutGrid .sectionOne p {
+    font-size: 16px;
+    line-height: 1.8rem;
+}
+
+.about .aboutGrid .sectionOne .button {
+    background-color: var(--shadow-first-background-color);
+    border-radius: var(--border-radius);
+    padding: 8px;
+    color: var(--text-main-color) !important;
+    outline: none;
+    transition: var(--transation);
+}
+
+.about .aboutGrid .sectionOne img {
+    width: 100% !important;
+    border-radius: var(--border-radius);
+}
+
+/* end aboud */
+/* start committees */
+.committees {
+    margin-top: var(--margin-top-large);
+    
+}
+
+.committees .committe h2 {
+    color: var(--main-color) !important;
+    text-align: center;
+    font-weight: 800 !important;
+}
+
+.committees .committeeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    text-align: center;
+    margin-top: 45px;
+    align-items: center;
+
+}
+
+.committees .committeeGrid .sectionOne {
+    background-color: var(--cards-color);
+    padding: 35px;
+    border-radius: var(--border-radius);
+}
+.committees .committeeGrid .sectionOne:hover {
+    transform: scale(1.06);
+
+}
+
+.committees .committeeGrid .sectionOne .fa-solid {
+    color: var(--main-color) !important;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.committees .committeeGrid .sectionOne .button {
+    margin-top: 30px;
+}
+
+.committees .committeeGrid .sectionOne .button a {
+    background-color: var(--shadow-first-background-color);
+    border-radius: var(--border-radius);
+    padding: 8px;
+    color: var(--text-main-color) !important;
+    outline: none;
+    transition: var(--transation);
+}
+
+/* end committees */
+
+/* start awards */
+.awards {
+    margin-top: var(--margin-top-large) !important;
+    padding-bottom: var(--margin-top-large) !important;
+    padding-top: 45px;
+    background-color: var(--cards-color) !important;
+}
+
+.awards .aw h2 {
+    text-align: center;
+    color: var(--main-color) !important;
+    font-weight: 800 !important;
+}
+
+.awards .awardsGrid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.awards .awardsGrid .sectionOne {
+    background-color: var(--text-main-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.awards .awardsGrid .sectionOne:hover {
+    transform: scale(1.06);
+}
+.awards .awardsGrid .sectionOne .fa-solid {
+    color: var(--main-color) !important;
+}
+
+/* end awards */
+/* start competitions */
+.Competitions {
+    margin-top: var(--margin-top-large);
+    margin-bottom: 20px;
+    padding-bottom: 65px;
+
+}
+
+.Competitions .comp h2 {
+    text-align: center;
+    font-weight: 800 !important;
+    color: var(--main-color) !important;
+}
+
+.Competitions .competitionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.Competitions .competitionsGrid .sectionOne {
+    text-align: center;
+    background-color: var(--cards-color) !important;
+    padding: 20px;
+    margin-top: 45px;
+    border-radius: var(--border-radius);
+}
+.Competitions .competitionsGrid .sectionOne:hover {
+    transform: scale(1.06);
+
+}
+.Competitions .competitionsGrid .sectionOne img {
+    width: 30% !important;
+}
+
+/* end competitions */
+/* extra small screens */
+@media only screen and (max-width: 600px) {
+
+    /* start bref */
+    .bref {
+        margin-top: -12px !important;
+    }
+
+    .bref .GridBref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* end bref */
+    /* start about */
+    .about .aboutGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+    }
+
+    /* end about */
+    /* start awards */
+    .awards {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .awards .awardsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    }
+
+    /* end awards */
+    /* start competitions */
+    .Competitions {
+        margin-top: var(--margin-top-small);
+    }
+
+    .Competitions .competitionsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    /* end competitions */
+    /* start committees */
+
+    .committees .committeeGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* end committees */
+
+}
+
+/* small screen */
+@media (min-width:601px) and (max-width:767px) {
+    .bref {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .bref .GridBref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* start about */
+    .about .aboutGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+    }
+
+    /* end about */
+    /* start awards */
+    .awards {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .awards .awardsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    }
+
+    /* end awards */
+    /* start competitions */
+    .Competitions {
+        margin-top: var(--margin-top-small);
+    }
+
+    .Competitions .competitionsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    /* end competitions */
+        /* start committees */
+
+        .committees .committeeGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+    
+        /* end committees */
+
+}
+
+/* medium screens */
+@media (min-width:768px) and (max-width:780px) {
+    .bref {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .bref .GridBref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* start about */
+    .about .aboutGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+    }
+
+    /* end about */
+    /* start awards */
+    .awards {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .awards .awardsGrid {
+        gap: 45px;
+    }
+
+    /* end awards */
+        /* start committees */
+
+        .committees .committeeGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+    
+        /* end committees */
+
+}
+
+/*  large screens */
+@media (min-width:781px) and (max-width:940px) {
+
+    /* start bref */
+    .bref {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .bref .GridBref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+
+    /* end bref */
+    /* start about */
+    .about .aboutGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+    }
+
+    /* end about */
+    /* start awards */
+    .awards {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .awards .awardsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    }
+
+    /* end awards */
+        /* start committees */
+
+        .committees .committeeGrid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+    
+        /* end committees */
+    
+
+}
+
+@media (min-width:941px) and (max-width:1200px) {
+
+    /* start bref */
+    .bref {
+        margin-top: var(--margin-top-small) !important;
+    }
+
+    .bref .GridBref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* end bref */
+    /* start about */
+    .about .aboutGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+    }
+
+    /* end about */
+
+}
+
+/* extra large screens */
+@media (min-width:1400px) and (max-width:3700px) {
+
+    /* start Header */
+    .bref .GridBref .sectionOne p {
+        font-size: 22px;
+        line-height: 2.1rem;
+        margin-bottom: 22px;
+
+    }
+
+    .bref .GridBref .sectionOne .button {
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    /* start Header */
+
+}

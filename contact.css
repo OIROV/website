@@ -1,0 +1,87 @@
+
+
+.forms {
+    position: relative;
+    width: 100%;
+    background: var(--cards-color);
+    padding: 35px;
+    margin-top: var(--margin-top-large);
+}
+
+::placeholder {
+    color: var(--text-secondary-color) !important;
+}
+
+.all h2 {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+
+.forms .input-box {
+    width: 100%;
+    margin-top: 20px;
+    color: red !important;
+}
+
+
+.form :where(.input-box input) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1em;
+    color: var(--text-secondary-color);
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+textarea {
+    padding: 15px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+textarea:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .buttons{
+    color: var(--background-main-color) !important;
+    font-size: 1.2rem !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: var(--border-radius) !important;
+    font-weight: 400 !important;
+    background-color: var(--background-secondary-color ) !important;
+    width: 200px !important;
+    height: 40px !important;
+    transition: var(--transation) !important;
+}
+.form .buttons:hover{
+    background-color: var(--main-color);
+}
+
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
